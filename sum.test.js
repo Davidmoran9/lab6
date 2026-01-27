@@ -8,3 +8,7 @@ test('resta 5 - 2 debe ser 3', () => {
   expect(rest(5, 2)).toBe(3);
 });
 
+const div = require('./div');
+test('divide 6 / 0 debe ser indefinido', () => {
+  expect(div(6, 0)).toBe(undefined);
+});
