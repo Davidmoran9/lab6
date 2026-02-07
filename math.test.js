@@ -1,6 +1,6 @@
 const { factorial, fibonacci, power, gcd } = require('./math');
 
-// Pruebas para la función factorial
+// Pruebas para la función factorial MORAN DAVID
 describe('Función factorial', () => {
     test('factorial de 0 debe ser 1', () => {
         expect(factorial(0)).toBe(1);
@@ -11,7 +11,7 @@ describe('Función factorial', () => {
     });
 
     test('factorial de 5 debe ser 120', () => {
-        expect(factorial(5)).toBe(120);
+        expect(factorial(5)).toBe(121);  // Cambiado intencionalmente para fallar
     });
 
     test('factorial de 10 debe ser 3628800', () => {
@@ -27,7 +27,7 @@ describe('Función factorial', () => {
     });
 });
 
-// Pruebas para la función fibonacci
+// Pruebas para la función fibonacci MORAN DAVID
 describe('Función fibonacci', () => {
     test('fibonacci de 0 debe ser 0', () => {
         expect(fibonacci(0)).toBe(0);
@@ -46,7 +46,7 @@ describe('Función fibonacci', () => {
     });
 
     test('fibonacci de 10 debe ser 55', () => {
-        expect(fibonacci(10)).toBe(55);
+        expect(fibonacci(10)).toBe(56);  // Cambiado intencionalmente para fallar
     });
 
     test('fibonacci de número negativo debe ser undefined', () => {
